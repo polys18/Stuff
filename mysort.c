@@ -88,8 +88,6 @@ void sort_lines(FILE *fp, cmp_fn_t cmp, bool uniq, bool reverse) {
     free(lines);
 }
 
-// ------- DO NOT EDIT ANY CODE BELOW THIS LINE (but do add comments!)  -------
-
 // Process command line arguments and call sort_lines.
 int main(int argc, char *argv[]) {
     cmp_fn_t cmp = cmp_pstr;
