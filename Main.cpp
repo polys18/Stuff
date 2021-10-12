@@ -67,6 +67,7 @@ bool terminal(Vector<Vector<string>> state) {
     return true;
 }
 
+//Utility is the score of the teaminal states. 1 means x wins and -1 means that o wins.
 int utility(Vector<Vector<string>> state) {
     if (!terminal(state)) {
         error("utility cannot be used wnen the state is not terminal.");
@@ -127,6 +128,7 @@ Vector<Vector<int>> actions(Vector<Vector<string>> state) {
     return result;
 }
 
+// The minplay and maxplay are the actual recursive algorithm that drive this program.
 int minPlay(Vector<Vector<string>> state, Vector<int>& actn);
 
 int maxPlay(Vector<Vector<string>> state, Vector<int>& actn) {
