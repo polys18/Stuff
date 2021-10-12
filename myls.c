@@ -83,8 +83,6 @@ void ls(const char *dirpath, int filter, int order) {
     free(namelist);    
 }
 
-// ------- DO NOT EDIT ANY CODE BELOW THIS LINE (but do add comments!)  -------
-
 // Processes command line arguments and flags and calls ls.
 int main(int argc, char *argv[]) {
     int order = SORT_BY_NAME;
